@@ -1,0 +1,34 @@
+@include add-grid(12);
+@include add-gutter(1/3);
+@include add-gutter-style('split');
+
+html {
+  background: $background;
+  height: 100%;
+  @include sgs-change('debug', true);
+  @include background-grid($color: blue);
+}
+
+body {
+  height: 100%;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+p {
+  margin: 0;
+}
