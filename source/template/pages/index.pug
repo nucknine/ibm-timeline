@@ -1,9 +1,130 @@
 extends ../_main-template
 
 block variables
-    - var title = 'Home page'
+    - var title = 'History'
 
 block content
-    .icon-div
-        +icon('map-marker')
-        +icon('times')
+    section.section.timeline
+        .timeline__title
+            h1.timeline__titletext
+                | History
+        #js-timeline-container.timeline__container
+            .timeline__yearblock
+                h2.timeline__year
+                    | 2003
+                .timeline__block.timeline__block_right
+                    .timeline__content
+                        p.timeline__text
+                            | Four coders from North Karelia decide to form a
+                            | company.
+            .timeline__yearblock
+                h2.timeline__year
+                    | 2004
+                .timeline__block.timeline__block_left
+                    .timeline__content
+                        p.timeline__text
+                            | Our persistent fighters face challenges and losses
+                            | in the early phases of the company. But growth is
+                            | there to be seen - developing systems
+                            | for manufacturing.
+            .timeline__yearblock
+                h2.timeline__year
+                    | 2005
+                .timeline__block.timeline__block_right
+                    .timeline__content
+                        p.timeline__text
+                            | With patience we keep on growing: making losses
+                            | but at the same time we receive new customers
+                            | and workers.
+                .timeline__block.timeline__block_left
+                    .timeline__content
+                        p.timeline__text
+                            | English becomes our second working language as
+                            | we work together with different cultures and
+                            | nationalities.
+            .timeline__yearblock
+                h2.timeline__year
+                    | 2010
+                .timeline__block.timeline__block_right
+                    .timeline__content
+                        p.timeline__text
+                            | We open new offices in Helsinki and
+                            | Petrozavodsk. Open-source solutions become the strategy for the company.
+                            | Valamis - Learning Experience Platform development begins.
+                .timeline__block.timeline__block_left
+                    .timeline__content
+                        p.timeline__text
+                            | Fast growth - new personnel and finding our values: Customer orientation,
+                            | Responsibility, Development and Sense of community.
+            .timeline__yearblock
+                h2.timeline__year
+                    | 2012
+                .timeline__block.timeline__block_right
+                    .timeline__content
+                        p.timeline__text
+                            | We acquire open-source company Fudeco Oy. 
+                            | New office in Oulu.
+            .timeline__yearblock
+                h2.timeline__year
+                    | 2013
+                .timeline__block.timeline__block_left
+                    .timeline__content
+                        p.timeline__text
+                            | Great Place to Work! We’re rewarded as one of
+                            | the best workplaces in Finland and Europe.
+                            | Valamis - Learning Experience Platform is
+                            | released.
+            .timeline__yearblock
+                h2.timeline__year
+                    | 2015
+                .timeline__block.timeline__block_right
+                    .timeline__content
+                        p.timeline__text
+                            | We specialize in the digitalization of learning.
+                            | New offices are opened in Lappeenranta and Boston.
+                            | Epic Challenge program: epic co-operation with NASA begins!
+                .timeline__block.timeline__block_left
+                    .timeline__content
+                        .timeline__picture
+                            img(src="./assets/img/image_01.png").timeline__img
+            .timeline__yearblock
+                h2.timeline__year
+                    | 2016
+                .timeline__block.timeline__block_right
+                    .timeline__content
+                        p.timeline__text
+                            | Forerunners in the digitalization of learning with Valamis - Learning Experience Platform in the lead.
+                            | The goal is to globalize our business partnership.
+                .timeline__block.timeline__block_left
+                    .timeline__content
+                        p.timeline__text
+                            | Great Place to Work Finland (4th) and Europe (7th).
+                .timeline__block.timeline__block_right
+                    .timeline__content
+                        p.timeline__text
+                            | We acquire predictive analytics company OlapCon Oy -
+                            | the combined competencies allow us to offer a wider range of services.
+                .timeline__block.timeline__block_left
+                    .timeline__content
+                        p.timeline__text
+                            | #WeAreArcusys: +150 arcusysians and we keep
+                .timeline__block.timeline__block_right
+                    .timeline__content
+                        .timeline__picture
+                            img(src="./assets/img/image_02.png").timeline__img
+                        p.timeline__text
+                            | Valamis team at Liferay Symposium in Chicago
+            .timeline__yearblock
+                h2.timeline__year
+                    | 2017
+                .timeline__block.timeline__block_left
+                    .timeline__content
+                        p.timeline__text
+                            | We continue to grow internationally as we
+                            | open new subsidiaries in Wiesbaden, Germany and
+                            | London, UK.
+        #js-timeline-footer.timeline__footer
+            button(id="js-timeline-btn").timeline__button
+                | show full timeline
+            .timeline__gradient
+

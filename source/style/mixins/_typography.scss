@@ -1,14 +1,12 @@
 /*
 font-size
+задает размер шрифта в rem или px если нет поддержки.
+для body задан - 0.8 т.е. 16px и 1rem
 */
 @mixin font-size($sizeValue: 1) {
   font-size: ($sizeValue * 20) * 1px;
   font-size: $sizeValue * 1.25rem;
 }
-
-/*
-bernier font
-*/
 
 @mixin bernier() {
   font-family: 'bernier';

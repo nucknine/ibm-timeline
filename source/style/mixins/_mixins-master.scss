@@ -66,16 +66,13 @@ adaptive media
 
 @mixin adaptive($point) {
   @if $point == smart {
-    @media only screen and (max-width: 480px) { @content; }
+    @media only screen and (max-width: 390px) { @content; }
   }
   @else if $point == tablet {
     @media only screen and (max-width: 768px) { @content; }
   }
-  @else if $point == laptop {
-    @media only screen and (max-width: 992px) { @content; }
-  }
   @else if $point == pc {
-    @media only screen and (max-width: 1200px)  { @content; }
+    @media only screen and (max-width: 1024px)  { @content; }
   }
 }
 

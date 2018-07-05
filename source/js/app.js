@@ -1,19 +1,15 @@
-/* globals Handlebars */
+window.onload = () => {
+    let btn = document.getElementById('js-timeline-btn'),
+        footer = document.getElementById('js-timeline-footer'),
+        container = document.getElementById('js-timeline-container');
 
-import Module from './file.js';
+    container.style.height = window.innerHeight - 100 + 'px';
+    footer.style.height = 60 + 'vh';
+    btn.style.bottom = 25 + '%';
 
-console.log(Module.hello());
-
-const arr = ['a', 34, 'd'];
-
-arr.includes('d') ? console.log('ES6 includes work') : 0;
-
-async function foo() {
-    await bar();
-}
-
-function bar() {
-    console.log('ES6 async functions work!');
-}
-
-foo();
+    btn.addEventListener('click', () => {
+        container.style.height = 'auto';
+        footer.style.height = 7.5 + 'rem';
+        btn.style.display = 'none';
+    })
+};

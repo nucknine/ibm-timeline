@@ -1,12 +1,17 @@
-@include add-grid(12);
-@include add-gutter(1/3);
-@include add-gutter-style('split');
+// @include add-grid(12);
+// @include add-gutter(1/3);
+
+// @include sgs-change('debug', true);
 
 html {
-  background: $background;
   height: 100%;
-  @include sgs-change('debug', true);
-  @include background-grid($color: blue);
+  font-size: 16px;
+  @include adaptive('tablet') {
+    font-size: 14px;
+  }
+  @include adaptive('smart') {
+    font-size: 14px;
+  }
 }
 
 body {
@@ -21,6 +26,7 @@ body {
 h1, h2, h3, h4, h5 {
   margin-top: 0;
   margin-bottom: 0;
+  font-weight: normal;
 }
 
 ul {

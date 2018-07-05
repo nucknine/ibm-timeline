@@ -1,4 +1,21 @@
-@import url('https://fonts.googleapis.com/css?family=Fira+Sans:300,500&amp;subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,500,500i&amp;subset=cyrillic" rel="stylesheet"');
+
+@font-face {
+  font-family: 'bernier';
+  src: url('../../fonts/BERNIERRegular-Regular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sansus Webissimo Regular';
+  src: url('../../fonts/SansusWebissimo.eot');
+  src: url('../../fonts/SansusWebissimo.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/SansusWebissimo.woff') format('woff'),
+  url('../../fonts/SansusWebissimo.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 body {
   -webkit-font-smoothing: antialiased;
@@ -9,45 +26,41 @@ button,
 input,
 select,
 textarea {
-  resize: none;
   color: $main-font-color;
   font-family: $main-font;
-  @include font-size(0.8);
+  font-weight: 400;
+  @include font-size(0.8); // 16px
   line-height: $font__line-height-body;
-
-  @include adaptive(smart) {
-    @include font-size(1);
-  }
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin-top: .75em;
+  margin-top: 12px;
   font-family: $main-font;
-  margin-bottom: .25em;
+  margin-bottom: 4px;
   clear: both;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 48px;
 }
 
 h2 {
-  font-size: 2.6em;
+  font-size: 41px;
 }
 
 h3 {
-  font-size: 2.2em;
+  font-size: 35px;
 }
 
 h4 {
-  font-size: 2em;
+  font-size: 32px;
 }
 
 h5 {
-  font-size: 1.8em;
+  font-size: 28px;
 }
 
 h6 {
-  font-size: 1.6em;
+  font-size: 25px;
 }
