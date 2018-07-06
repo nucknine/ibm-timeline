@@ -87,6 +87,12 @@
         }
         @include adaptive('smart') {
             width: 100%;
+            &:nth-child(odd) {
+                padding-top: 27px;
+                &::after {
+                    top: 33px;
+                }
+            }
         }
         &::after {
             content: '';
@@ -109,7 +115,8 @@
             left: 0;
             @include adaptive('smart') {
                 text-align: left;
-                padding-left: 25px;
+                padding-left: 31px;
+                padding-right: 0;
                 left: 0%;
             }
         }
