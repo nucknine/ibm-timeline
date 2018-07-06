@@ -177,8 +177,8 @@
     }
     &__button {
         outline: none;
-        width: 185px;
-        height: 40px;
+        min-width: 185px;
+        min-height: 40px;
         background-color: transparent;
         color: $white;
         text-transform: uppercase;
