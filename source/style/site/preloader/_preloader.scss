@@ -1,0 +1,29 @@
+.preloader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: $black;
+    z-index: 3;
+    &__box {
+        @include centered('both');
+        width: 120px;
+        height: 120px;
+    }
+    &__load {
+        border: 16px solid $blue;
+        border-top: 4px solid $blue;
+        border-bottom: 4px solid $blue;
+        background: $white;
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+        animation: spin 1s linear infinite;
+    }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
