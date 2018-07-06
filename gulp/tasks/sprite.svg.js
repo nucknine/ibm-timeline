@@ -23,6 +23,8 @@ module.exports = function() {
             .pipe($.gp.svgSprite({
                 mode: {
                     symbol: {
+                        // кладем спрайт в директорию build
+                        // build/assets/img/sprites/sprite.svg
                         sprite: '../../sprites/sprite.svg',
                         render: {
                             scss: {

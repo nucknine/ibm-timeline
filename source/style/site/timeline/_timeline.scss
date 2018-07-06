@@ -1,5 +1,6 @@
 .timeline {
     position: relative;
+    height: 100vh;
     color: $white;
     font-weight: 300;
     background-color: $black;
@@ -18,7 +19,7 @@
         line-height: 1;
     }
     &__container {
-        height: 90vh;
+        height: 100%;
         @include font-size(0.8);
         position: relative;
         max-width: 775px;
